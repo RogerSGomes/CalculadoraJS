@@ -2,7 +2,7 @@
   <h2>Sumário</h2>
     <ul>
       <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#tecnologias">Técnologias utilizadas</a></li>
+      <li><a href="#tecnologias">Tecnologias utilizadas</a></li>
       <li><a href="#instalacao">Rodando a aplicação</a></li>
       <li><a href="#galeria">Galeria</a></li>
       <li><a href="#nota">Notas</a></li>
@@ -10,7 +10,7 @@
   <h2 id='sobre'>💬 Sobre</h2>
   Este projeto é um teste pessoal que realizei para por em prática minha Lógica de Programação.
   
-  <h2 id='tecnologias'>👨‍💻 Técnologias utilizadas</h2>
+  <h2 id='tecnologias'>👨‍💻 Tecnologias utilizadas</h2>
     HTML, CSS e JavaScript
     
   <h2 id='instalacao'>🚀 Rodando a Aplicação</h2>  
