@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>CalculadoraJS</title>
+  </head>
+  <body>
+    <div class="container">
+      <p class="body-title">
+        Calculadora<label
+          style="
+            color: #7b23d5;
+            margin-left: 5px;
+            font-size: 25px;
+            font-weight: bold;
+          "
+          >JS</label
+        >
+      </p>
+      <div class="outside">
+        <div class="divhistorico"><p class="title">Histórico</p></div>
+        <div class="calculadora">
+          <input class="inp historico" type="text" disabled />
+          <input class="inp operador" type="text" disabled />
+          <input class="inp visor" type="text" disabled />
+          <input
+            class="btn btn0"
+            onclick="btnClick(0)"
+            type="button"
+            value="0"
+          />
+          <input
+            class="btn btn1"
+            onclick="btnClick(1)"
+            type="button"
+            value="1"
+          />
+          <input
+            class="btn btn2"
+            onclick="btnClick(2)"
+            type="button"
+            value="2"
+          />
+          <input
+            class="btn btn3"
+            onclick="btnClick(3)"
+            type="button"
+            value="3"
+          />
+          <input
+            class="btn btn4"
+            onclick="btnClick(4)"
+            type="button"
+            value="4"
+          />
+          <input
+            class="btn btn5"
+            onclick="btnClick(5)"
+            type="button"
+            value="5"
+          />
+          <input
+            class="btn btn6"
+            onclick="btnClick(6)"
+            type="button"
+            value="6"
+          />
+          <input
+            class="btn btn7"
+            onclick="btnClick(7)"
+            type="button"
+            value="7"
+          />
+          <input
+            class="btn btn8"
+            onclick="btnClick(8)"
+            type="button"
+            value="8"
+          />
+          <input
+            class="btn btn9"
+            onclick="btnClick(9)"
+            type="button"
+            value="9"
+          />
+          <input
+            class="btn btncom"
+            onclick="btnClick(10)"
+            type="button"
+            value=","
+          />
+          <input
+            class="btn btnequ"
+            onclick="btnClick(11)"
+            type="button"
+            value="="
+          />
+          <input
+            class="btn btnsum"
+            onclick="btnClick(12)"
+            type="button"
+            value="+"
+          />
+          <input
+            class="btn btnmin"
+            onclick="btnClick(13)"
+            type="button"
+            value="-"
+          />
+          <input
+            class="btn btnmul"
+            onclick="btnClick(14)"
+            type="button"
+            value="x"
+          />
+          <input
+            class="btn btnsla"
+            onclick="btnClick(15)"
+            type="button"
+            value="/"
+          />
+          <input
+            class="btn btnper"
+            onclick="btnClick(16)"
+            type="button"
+            value="%"
+          />
+          <input
+            class="btn btnera"
+            onclick="btnClick(17)"
+            type="button"
+            value="CE"
+          />
+          <input
+            class="btn btncle"
+            onclick="btnClick(18)"
+            type="button"
+            value="C"
+          />
+          <button class="btn btnawa" onclick="abreHistorico()">
+            <i class="material-icons">history</i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

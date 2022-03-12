@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Signika', sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  color: #f5f5f5;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  background: #111;
+}
+
+.body-title {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+
+  font-size: 25px;
+  letter-spacing: 2px;
+
+  z-index: -1;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outside {
+  background-color: #111;
+  padding: 0 25px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 15px #7b23d5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.outside .divhistorico {
+  width: 550px;
+  height: 550px;
+
+  padding: 25px 50px 25px 25px;
+
+  margin-right: 25px;
+  margin-left: -25px;
+
+  display: none;
+  align-items: flex-start;
+  justify-content: left;
+  flex-direction: column;
+
+  background: #1a1a1a;
+  border-radius: 25px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  position: absolute;
+  z-index: -1;
+}
+
+.outside .divhistorico .title {
+  width: 100%;
+
+  margin: 25px 0 50px 0;
+
+  text-align: center;
+  letter-spacing: 2px;
+  color: #7b23d5;
+}
+
+.outside .divhistorico div:not(.destaque) {
+  width: 100%;
+
+  display: flex;
+
+  padding: 0 25px;
+
+  margin-bottom: 40px;
+}
+
+.outside .divhistorico .destaque p {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.outside .divhistorico div p {
+  margin-right: 18px;
+
+  font-size: 18px;
+  color: #666;
+}
+
+.calculadora {
+  display: grid;
+
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'hist hist hist hist'
+    'operador visor visor visor'
+    'clear erase percentage slash'
+    'btn7 btn8 btn9 multi'
+    'btn4 btn5 btn6 minus'
+    'btn1 btn2 btn3 sum'
+    'btnaway btn0 comma equals';
+
+  width: 350px;
+  height: 550px;
+
+  padding: 25px 0;
+
+  background-color: #111;
+  border-radius: 25px;
+}
+
+.calculadora .historico {
+  grid-area: hist;
+
+  text-align: right;
+  letter-spacing: 2px;
+  font-size: 14px;
+  color: #7b23d5;
+  font-weight: bold;
+
+  padding-right: 25px;
+  padding-left: 25px;
+
+  background-color: #111;
+
+  border: 0;
+  border-radius: 25px 25px 0 0;
+}
+
+.calculadora .operador {
+  grid-area: operador;
+
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: bold;
+
+  padding-right: 25px;
+  padding-left: 25px;
+
+  background-color: #111;
+
+  border: 0;
+}
+
+.calculadora .visor {
+  grid-area: visor;
+
+  text-align: right;
+  letter-spacing: 2px;
+  font-weight: bold;
+
+  padding-right: 25px;
+  padding-left: 25px;
+
+  background-color: #111;
+
+  border: 0;
+}
+
+.calculadora .btn {
+  background-color: #1a1a1a;
+
+  border: 0;
+}
+
+.calculadora .btn:hover {
+  filter: brightness(125%);
+
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+.calculadora .btn0 {
+  grid-area: btn0;
+}
+
+.calculadora .btn1 {
+  grid-area: btn1;
+}
+
+.calculadora .btn2 {
+  grid-area: btn2;
+}
+
+.calculadora .btn3 {
+  grid-area: btn3;
+}
+
+.calculadora .btn4 {
+  grid-area: btn4;
+}
+
+.calculadora .btn5 {
+  grid-area: btn5;
+}
+
+.calculadora .btn6 {
+  grid-area: btn6;
+}
+
+.calculadora .btn7 {
+  grid-area: btn7;
+}
+
+.calculadora .btn8 {
+  grid-area: btn8;
+}
+
+.calculadora .btn9 {
+  grid-area: btn9;
+}
+
+.calculadora .btncom {
+  grid-area: comma;
+  font-size: 25px;
+}
+
+.calculadora .btnequ {
+  grid-area: equals;
+  font-size: 25px;
+  background-color: #7b23d5;
+  color: #f5f5f5;
+
+  border-radius: 0 0 25px 0;
+}
+
+.calculadora .btnsum {
+  grid-area: sum;
+  font-size: 25px;
+  color: #7b23d5;
+}
+
+.calculadora .btnmin {
+  grid-area: minus;
+  font-size: 25px;
+  color: #7b23d5;
+}
+
+.calculadora .btnmul {
+  grid-area: multi;
+  font-size: 25px;
+  color: #7b23d5;
+}
+
+.calculadora .btnsla {
+  grid-area: slash;
+  font-size: 25px;
+  color: #7b23d5;
+  border-radius: 0 25px 0 0;
+}
+
+.calculadora .btnper {
+  grid-area: percentage;
+  font-size: 25px;
+  color: #7b23d5;
+}
+
+.calculadora .btnera {
+  grid-area: erase;
+  font-size: 25px;
+  color: #7b23d5;
+}
+
+.calculadora .btncle {
+  grid-area: clear;
+  font-size: 25px;
+  color: #7b23d5;
+  border-radius: 25px 0 0 0;
+}
+
+.calculadora .btnawa {
+  grid-area: btnaway;
+  border-radius: 0 0 0 25px;
+}
