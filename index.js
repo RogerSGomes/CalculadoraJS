@@ -1,3 +1,40 @@
+(() => {
+  addEventListener("keydown", (event) => { onKeyDown(event) });
+})()
+
+const onKeyDown = (event) => {
+  const code = event.code
+  const buttonCodes = {
+    "Numpad0": 0,
+    "Numpad1": 1,
+    "Numpad2": 2,
+    "Numpad3": 3,
+    "Numpad4": 4,
+    "Numpad5": 5,
+    "Numpad6": 6,
+    "Numpad7": 7,
+    "Numpad8": 8,
+    "Numpad9": 9,
+    "NumpadDecimal": 10,
+    "NumpadEnter": 11,
+    "NumpadAdd": 12,
+    "NumpadSubtract": 13,
+    "NumpadMultiply": 14,
+    "NumpadDivide": 15,
+    "Digit5": 16,
+    "Delete": 18,
+    "Backspace": 17,
+  }
+
+  if (buttonCodes[code] == 16 && event.shiftKey) {
+    btnClick(buttonCodes[code]);
+  } else if (buttonCodes[code] != 16) {
+    btnClick(buttonCodes[code]);
+  }
+
+  return;
+}
+
 var inputs = document.getElementsByClassName('inp')
 inputs[0].value = null
 inputs[1].value = null
